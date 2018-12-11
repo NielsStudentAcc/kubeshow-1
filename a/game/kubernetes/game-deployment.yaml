@@ -1,1 +1,20 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: game
+  template:
+    metadata:
+      labels:
+        app: game
+    spec:
+      containers:
+      - name: game
+        image: gcr.io/kubeshow-224810/game:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 8080
