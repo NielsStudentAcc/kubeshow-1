@@ -100,10 +100,9 @@ function PODS(){
 
 }
 
-function PODSUI(pods, logwindow){
+function PODSUI(pods){
     var pods = pods;
     console.log(pods);
-    if (typeof(logwindow)==='undefined') logwindow = new LOGWINDOW();
 
     var alreadyShown = new Object();
     alreadyShown.terminating = new Object();
@@ -159,7 +158,7 @@ function PODSUI(pods, logwindow){
             span.dataset.selflink = pod.selflink;
             div.append(span);
             $("#pod-" + pod.holder).append(div);
-            logwindow.Log(pod);
+           
         }
 
         div.classList.add(pod.phase);
@@ -302,9 +301,6 @@ function DEPLOYMENTAPI(hostname){
     };
 
     var success = function(e){
-        if (typeof(logwindow)!='undefined') {
-            logwindow.Log(e);
-        }
     };
 
     var error = function(e){
