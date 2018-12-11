@@ -1,3 +1,4 @@
+BASEDIR = $(shell pwd)
 include ../../../Makefile.properties
 
 
