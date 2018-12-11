@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: game
-        image: gcr.io/kubeshow-224810/game:latest
+        image: gcr.io/kube-225214/game:latest
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8080
