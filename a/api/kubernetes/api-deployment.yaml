@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: gcr.io/kubeshow-224810/api:latest
+        image: gcr.io/kube-225214/api:latest
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8080
