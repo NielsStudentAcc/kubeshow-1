@@ -14,12 +14,12 @@ spec:
     spec:
       containers:
       - name: admin
-        image: gcr.io/kubeshow-224810/admin:latest
+        image: gcr.io/kube-225214/admin:latest
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8080
         env:
         - name: APIIMAGE
-          value: gcr.io/kubeshow-224810/api
+          value: gcr.io/kube-225214/api
         - name: APIPULLPOLICY
           value: "Always"
