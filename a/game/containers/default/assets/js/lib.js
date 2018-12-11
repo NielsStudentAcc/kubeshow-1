@@ -255,9 +255,8 @@ function API(hostname){
 
 }
 
-function DEPLOYMENTAPI(hostname, logwindow){
-    if (typeof(logwindow)==='undefined') logwindow = new LOGWINDOW();
-
+function DEPLOYMENTAPI(hostname){
+    
     this.debug = false;
     var apihostname = window.location.host;
     this.timeout = 5000;
