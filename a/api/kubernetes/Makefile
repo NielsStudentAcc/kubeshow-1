@@ -45,3 +45,4 @@ define rewritefile
 	@sed s/$(2)/$(3)/g <""$(1)"" >"$(BASEDIR)/.temp"
 	@cp "$(BASEDIR)/.temp" $(1)
 	@rm "$(BASEDIR)/.temp" 
+endef
