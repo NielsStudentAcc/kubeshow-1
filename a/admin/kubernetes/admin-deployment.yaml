@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin
+  template:
+    metadata:
+      labels:
+        app: admin
+    spec:
+      containers:
+      - name: admin
+        image: gcr.io/kubeshow-224810/admin:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 8080
+        env:
+        - name: APIIMAGE
+          value: gcr.io/kubeshow-224810/api
+        - name: APIPULLPOLICY
+          value: "Always"
