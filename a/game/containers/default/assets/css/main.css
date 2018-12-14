@@ -1,5 +1,4 @@
 body{
-    background: url("background2.png");
     background-size: cover;
     color: #333;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -8,7 +7,6 @@ body{
     padding-top: 250px;
     width: 1200px;
     margin: 180px auto 5px auto;
-    background: url("holder_background.png");
     background-size: cover;
     border: 10px solid #333;
     min-height: 550px;
@@ -31,7 +29,6 @@ body{
     font-size: 2.8rem;
     color: #222;
     text-align: center;
-    background: url("sign.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -48,7 +45,6 @@ body{
     font-size: 1.4rem;
     color: #222;
     text-align: center;
-    background: url("sign.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -66,7 +62,6 @@ body{
 }
 
 .pods{
-    cursor: url("cursor_inactive.png"), auto;
     margin: 0px 50px 0 50px;
     display: block;
     position: relative;
@@ -77,14 +72,12 @@ body{
 
 
 .pod{
-    cursor: url("cursor.png"), pointer;
     width: 78px;
     height: 83px;
     margin: 5px 5px 35px 5px;
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    cursor: url("cursor.png"), pointer;
     text-align: center;
     vertical-align: bottom;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -105,17 +98,14 @@ body{
 
 
 .pending {
-    background-image: url("pending.png");
     color:yellow;
 }
 
 .running {
-    background-image: url("running.png");
     color:#555;
 }
 
 .terminating {
-    background-image: url("terminating.png");
     color:red;
 }
 
@@ -145,7 +135,6 @@ body{
     right:15%;
     top: -15%;
     width: 50%;
-    background: url("alert.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Rye', cursive;
@@ -244,7 +233,6 @@ body{
 
 .pods-table{
     margin: 0px 50px 0 50px;
-    cursor: url("cursor_inactive.png"), auto;
 }
 
 .modal{
